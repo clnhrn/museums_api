@@ -24,3 +24,6 @@ Once the container is running, run migrations using alembic
 
 You may now access the API on your browser via: http://localhost:8000/docs
 
+![image](https://user-images.githubusercontent.com/73839376/216799142-d69cf304-da51-48d7-8e8d-ebb3a19df283.png)
+
+
