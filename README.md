@@ -1,4 +1,4 @@
-# Setup
+# Setup (with Docker Compose)
 
 Create .env file and include the following variables (input your credentials)
 
@@ -10,8 +10,6 @@ DB_NAME=records_db
 PGADMIN_EMAIL=admin@admin.com
 PGADMIN_PASSWORD=admin
 ```
-
-
 Run Docker Compose
 
 ```docker-compose up```
