@@ -9,10 +9,11 @@ Base = declarative_base()
 
 class Artist(Base):
     __tablename__ = "artists"
-    id = Column(Integer, primary_key=True, nullable=False) 
+    id = Column(Integer, primary_key=True, nullable=False)
     artist_name = Column(String)
     artist_race_primary = Column(String)
     artist_race_secondary = Column(String, nullable=True)
+    racial_category = Column(String, nullable=True)
     artist_bio = Column(String, nullable=True)
     nationality = Column(String, nullable=True)
     artist_dob = Column(String, nullable=True)
@@ -36,3 +37,10 @@ class Artwork(Base):
     time_created = Column(DateTime(timezone=True), server_default=func.now())
     time_updated = Column(DateTime(timezone=True), onupdate=func.now())
 
+
+class User(Base):
+    __tablename__ = "users"
+    id = Column(Integer, primary_key=True, nullable=False)
+    username = Column(String)
+    password = Column(String)
+    time_created = Column(DateTime(timezone=True), server_default=func.now())

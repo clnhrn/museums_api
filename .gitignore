@@ -1,3 +1,6 @@
 .env
 fastapi_museums_venv/
 __pycache__/
+venv_fastapi/
+config.py
+auth.py

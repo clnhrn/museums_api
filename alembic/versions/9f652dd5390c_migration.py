@@ -1,8 +1,8 @@
-"""New Migration
+"""migration
 
-Revision ID: 5e7328488575
+Revision ID: 9f652dd5390c
 Revises: 
-Create Date: 2023-02-04 11:31:53.221907
+Create Date: 2023-02-05 15:07:03.928969
 
 """
 from alembic import op
@@ -10,7 +10,7 @@ import sqlalchemy as sa
 
 
 # revision identifiers, used by Alembic.
-revision = '5e7328488575'
+revision = '9f652dd5390c'
 down_revision = None
 branch_labels = None
 depends_on = None
@@ -23,6 +23,7 @@ def upgrade():
     sa.Column('artist_name', sa.String(), nullable=True),
     sa.Column('artist_race_primary', sa.String(), nullable=True),
     sa.Column('artist_race_secondary', sa.String(), nullable=True),
+    sa.Column('racial_category', sa.String(), nullable=True),
     sa.Column('artist_bio', sa.String(), nullable=True),
     sa.Column('nationality', sa.String(), nullable=True),
     sa.Column('artist_dob', sa.String(), nullable=True),
@@ -44,7 +45,6 @@ def upgrade():
     sa.Column('id', sa.Integer(), nullable=False),
     sa.Column('time_created', sa.DateTime(timezone=True), server_default=sa.text('now()'), nullable=True),
     sa.Column('time_updated', sa.DateTime(timezone=True), nullable=True),
-    sa.ForeignKeyConstraint(['artist_id'], ['artists.id'], ),
     sa.PrimaryKeyConstraint('id')
     )
     # ### end Alembic commands ###
