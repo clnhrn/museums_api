@@ -20,7 +20,7 @@ Once the container is running, run migrations
 
 ```docker-compose run app alembic upgrade head```
 
-You may now access the API on your browser via: http://localhost:8080/docs
+You may access the API documentation on your browser via: http://localhost:8080/docs
 
 ![image](https://user-images.githubusercontent.com/73839376/217846431-67358388-e2c8-4b5a-9b54-afb9243d4d38.png)
 
