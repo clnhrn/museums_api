@@ -16,7 +16,7 @@ Run Docker Compose
 
 ```docker-compose up```
 
-Once the container is running, run migrations using alembic
+Once the container is running, run migrations
 
 ```docker-compose run app alembic revision --autogenerate -m "migration"```
 
@@ -24,13 +24,6 @@ Once the container is running, run migrations using alembic
 
 You may now access the API on your browser via: http://localhost:8080/docs
 
-![image](https://user-images.githubusercontent.com/73839376/216799142-d69cf304-da51-48d7-8e8d-ebb3a19df283.png)
-
-Filter parameters for: **GET /museums-api/v1/artworks/filter**
-![image](https://user-images.githubusercontent.com/73839376/216801957-bc35a82c-98f7-4deb-8051-7d3789e3b03b.png)
-
-
-Successful Response (Example):
-![image](https://user-images.githubusercontent.com/73839376/216801921-80236495-9fac-4dbc-a10b-f47c1987da97.png)
+![image](https://user-images.githubusercontent.com/73839376/217846431-67358388-e2c8-4b5a-9b54-afb9243d4d38.png)
 
 
