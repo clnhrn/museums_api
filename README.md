@@ -65,7 +65,7 @@ Before restoring the dump, we need to delete the existing schema. Run the comman
 psql postgresql://cln:museum_pass@localhost:6543/records
 ```
 
-Once connected to the 'records' database, enter the query below to delete the existing schema
+Once connected to the 'records' database, enter the SQL statement below to delete the existing schema
 
 ``` sql
 DROP SCHEMA public CASCADE;
