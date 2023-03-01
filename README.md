@@ -53,7 +53,12 @@ docker inspect -f '{{ json .Mounts }}' <container ID> | python -m json.tool
 In my case, the command returned 1 volume that has a "Destination" path (/var/lib/postgresql/data). This is where we will store the dump file.
 
 To copy the dump file from your local machine to the Docker container, use the docker cp command with the following format:
+
+```bash
 docker cp <path to dump file in host machine> <container name>:<path to volume where dump file will be saved>
+```
+
+For example:
 
 ```bash 
 docker cp /path/to/records.sql postgresql_db:/var/lib/postgresql/data/records.sql
